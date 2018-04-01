@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+  <include layout="@layout/bar_layout"
+      android:id="@+id/title_lay"/>
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:scrollbars="none"
+      android:layout_below="@+id/title_lay"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <LinearLayout
+          android:id="@+id/header_rl"
+          android:layout_width="fill_parent"
+          android:layout_height="88dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="5"
+            android:text="@string/header_icon_txt"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+        <FrameLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="90dp"
+            android:layout_marginRight="24dp"
+            android:layout_height="90dp">
+          <ImageView
+              android:id="@+id/header_icon_iv"
+              android:layout_width="66dp"
+              android:layout_height="66dp"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="@dimen/dp_16"
+              android:src="@drawable/noavatar"
+              />
+          <ImageView
+              android:id="@+id/child_vip_avtar"
+              android:layout_width="40dp"
+              android:layout_height="24dp"
+              android:visibility="gone"
+              android:layout_gravity="top|center_horizontal"
+              android:src="@drawable/child_vipcrown"/>
+        </FrameLayout>
+        <TextView
+            android:id="@+id/header_upload_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/header_upload_txt"
+            android:textColor="@color/text_color_99"
+            android:textSize="14sp" />
+      </LinearLayout>
+      <include layout="@layout/full_cut_off"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:minHeight="45dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="5"
+            android:text="@string/baby_name_txt"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/baby_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_hint_txt"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColorHint="@color/text_color_99"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+      </LinearLayout>
+      <include layout="@layout/full_cut_off"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:minHeight="45dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="5"
+            android:text="@string/baby_nickname_txt"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/baby_nickname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_hint_txt"
+            android:background="@null"
+            android:textColorHint="@color/text_color_99"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+      </LinearLayout>
+      <include layout="@layout/full_cut_off"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="5"
+            android:text="@string/baby_sex_txt"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/baby_sex_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_hint_txt"
+            android:textColorHint="@color/text_color_99"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+      </LinearLayout>
+      <include layout="@layout/full_cut_off"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="5"
+            android:text="@string/baby_birthday_txt"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/baby_birthday_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_hint_txt"
+            android:textColorHint="@color/text_color_99"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+      </LinearLayout>
+      <include layout="@layout/full_cut_off"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:minHeight="45dp"
+          android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:paddingLeft="16dp"
+          android:paddingRight="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="5"
+            android:text="@string/baby_remark_txt"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/baby_remark_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_hint_txt"
+            android:background="@null"
+            android:textColorHint="@color/text_color_99"
+            android:textColor="@color/text_color_33"
+            android:textSize="14sp" />
+      </LinearLayout>
+      <include layout="@layout/full_cut_off"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:layout_marginTop="32dp"
+          android:text="@string/baby_tips_txt"
+          android:textColor="@color/text_color_66"
+          android:textSize="12sp" />
+      <Button
+          android:id="@+id/baby_save_bt"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_margin="24dp"
+          android:background="@drawable/rectangle_round_corner6_orange"
+          android:text="@string/baby_save_txt"
+          android:textColor="@color/white"
+          android:textSize="16sp" />
+      <TextView
+          android:id="@+id/delete_child"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          android:layout_marginLeft="@dimen/dp_24"
+          android:layout_marginTop="@dimen/dp_16"
+          android:textColor="@color/text_color_77"
+          android:gravity="center_vertical"
+          android:drawableLeft="@drawable/delete_icon"
+          android:text="删除这个宝贝的信息"/>
+    </LinearLayout>
+
+  </ScrollView>
+  <include layout="@layout/wait_progressbar" />
+</RelativeLayout>

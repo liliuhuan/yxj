@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="169dp"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle_round_top_corner"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/question_mark_icon"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:text="@string/choose_gender_txt"
+            android:textColor="@color/text_color_33"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/cancel_iv"
+            android:layout_width="32dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/cancel_icon" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#dcdcdc" />
+
+    <RadioGroup
+        android:id="@+id/choose_gender_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangle_round_buttom_corner"
+        android:layout_weight="3" >
+
+        <RadioButton
+            android:id="@+id/woman_rb"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:text="@string/woman_txt"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/man_rb"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/two_border_bg"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:text="@string/man_txt"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+</LinearLayout>

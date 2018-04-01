@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/list_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.xrecyclerview.XRecyclerView
+        android:id="@+id/xrlistview"
+        android:paddingTop="10dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/empty_img_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="@drawable/empty_img"/>
+    <include layout="@layout/wait_progressbar"/>
+</FrameLayout>

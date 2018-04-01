@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_system_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:orientation="vertical"
+    tools:context="com.bolooo.studyhomeparents.activty.mine.SystemSettingActivity">
+    <include layout="@layout/bar_layout"/>
+    <TextView
+        android:id="@+id/aboutUs"
+        android:layout_width="match_parent"
+        android:text="关于我们"
+        android:layout_marginTop="10dp"
+        android:drawableRight="@drawable/new_goin"
+        android:padding="12dp"
+        android:textColor="@color/text_title"
+        android:background="@color/white"
+        android:layout_height="48dp" />
+    <LinearLayout
+        android:id="@+id/clear_cache_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_title"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="16dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_title"
+            android:text="清除缓存"
+            />
+        <TextView
+            android:id="@+id/cache_size_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:drawableRight="@drawable/new_goin"
+            android:drawablePadding="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/text_title"
+            android:gravity="center_vertical|right"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/useHelp"
+        android:layout_width="match_parent"
+        android:text="使用帮助"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_title"
+        android:drawableRight="@drawable/new_goin"
+        android:padding="12dp"
+        android:background="@color/white"
+        android:layout_height="48dp" />
+</LinearLayout>

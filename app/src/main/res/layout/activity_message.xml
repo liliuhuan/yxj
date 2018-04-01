@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context="com.bolooo.studyhomeparents.activty.home.MessageActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/bar_layout"/>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_lay">
+         <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+                 <EditText
+                     android:id="@+id/et_message"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:minHeight="140dp"
+                     android:maxHeight="160dp"
+                     android:layout_margin="16dp"
+                     android:hint="@string/message_word"
+                     android:textSize="@dimen/sp_14"
+                     android:gravity="top"
+                     android:padding="8dp"
+                     android:background="@drawable/rectangle_round_corner8_grayee"/>
+                 <Button
+                     android:id="@+id/btn_summit1"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="16dp"
+                     android:layout_marginRight="@dimen/dp_16"
+                     android:textColor="@color/white"
+                     android:text="@string/message_commit"
+                     android:textSize="@dimen/sp_18"
+                     android:background="@drawable/rectangle_round_corner6_orange"/>
+                 <com.bolooo.studyhomeparents.views.SingleLayoutListView
+                         android:id="@+id/message_list_lv"
+                         android:layout_width="fill_parent"
+                         android:layout_height="fill_parent"
+                         android:layout_below="@+id/title_lay"
+                         android:divider="@color/gray_ee"
+                         android:dividerHeight="0.5dp"
+                         android:fadingEdge="none"
+                         android:footerDividersEnabled="false"
+                         android:listSelector="@color/white"/>
+                 <include layout="@layout/lay_emptyview"
+                     android:id="@+id/empty_ly"
+                     android:visibility="gone"/>
+                 <include layout="@layout/wait_progressbar"/>
+             </LinearLayout>
+         </ScrollView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</FrameLayout>

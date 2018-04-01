@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_title"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rl_title_layout"
+            android:background="@color/transparency"
+            android:layout_height="48dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="正在定位"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="2dp"
+                    android:drawableLeft="@drawable/new_locat"
+                    android:id="@+id/tv_locate" />
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:text="@string/main_title"/>
+                <TextView
+                    android:id="@+id/text_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:hint="@string/search_course"
+                    android:gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:paddingLeft="16dp"
+                    android:singleLine="true"
+                    android:visibility="visible"
+                    android:paddingRight="6dp"
+                    android:imeOptions="actionSearch"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:drawableRight="@drawable/new_search"
+                    android:background="@drawable/home_search_trans_shape" />
+                <ImageView
+                    android:id="@+id/tv_gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/new_gift"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    />
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/new_search"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="11dp" />
+        </RelativeLayout>
+
+</LinearLayout>

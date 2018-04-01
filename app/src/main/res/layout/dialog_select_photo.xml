@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+  <TextView
+      android:id="@+id/pick_from_cupture"
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:gravity="center"
+      android:background="@color/white"
+      android:text="@string/pick_from_cupture"
+      android:textColor="@color/text_color_33"
+      android:textSize="14sp"
+      />
+  <TextView
+      android:id="@+id/pick_from_gallery"
+      android:layout_width="match_parent"
+      android:layout_height="45dp"
+      android:gravity="center"
+      android:background="@drawable/two_border_bg"
+      android:text="@string/pick_from_gallery"
+      android:textColor="@color/text_color_33"
+      android:textSize="14sp"
+      />
+
+
+</LinearLayout>

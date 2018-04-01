@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_hot_search"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/bg_color">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            android:text="@string/cancel"/>
+        <EditText
+            android:id="@+id/et_keyword"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_cancel"
+            android:background="@drawable/tv_tab_bg_shape"
+            android:padding="8dp"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:hint="@string/search_hint"
+            />
+        <TextView
+            android:id="@+id/tv_serchBtn"
+            android:text="@string/search"
+            android:textColor="@color/grays"
+            android:padding="4dp"
+            android:textSize="12sp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_shape"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:layout_height="25dp" />
+    </LinearLayout>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        layout="@layout/no_net_textview"/>
+    <TextView
+        android:text="@string/hot_word"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+        <GridView
+            android:id="@+id/hot_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:horizontalSpacing="20dp"
+            android:verticalSpacing="10dp">
+        </GridView>
+        <ImageView
+            android:id="@+id/empty_img_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/empty_img"/>
+        <include layout="@layout/wait_progressbar" />
+    </FrameLayout>
+
+</LinearLayout>

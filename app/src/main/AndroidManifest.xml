@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bolooo.studyhomeparents">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 【必须】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 【常用】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".StudyApplication"
+        android:icon="@mipmap/cicon"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 百度定位 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <!-- Yo3FVUtNTqPOuVG2Z4baOK5ErjRbB5lK -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Yo3FVUtNTqPOuVG2Z4baOK5ErjRbB5lK" />
+
+        <!-- 信鸽 -->
+        <meta-data
+            android:name="com.tencent.rdm.uuid"
+            android:value="0a9aa75a-e184-4958-86ab-49f55e11e619" />
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:exported="false"
+            android:process=":xg_service_v2">
+            <intent-filter android:priority="0x7fffffff">
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+            <!-- 【可选】 usb相关的系统广播，增强信鸽service的复活机会，请根据需要添加 -->
+            <intent-filter android:priority="0x7fffffff">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理 -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="android.intent.action" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="false"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+
+        <!-- 【必须】 提高service的存活率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 【必须】 请修改为当前APP包名 .PUSH_ACTION, 如demo的包名为：com.qq.xgdemo -->
+                <action android:name="com.bolooo.studyhomeparents.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100255183" />
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A2MN946TQT7W" />
+        <meta-data
+            android:name="com.bolooo.studyhomeparents.utils.GlideConfiguration"
+            android:value="GlideModule" />
+        <!-- 首页 -->
+        <activity
+            android:name=".activty.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activty.WelcomActivity"
+            android:label="@string/welcome_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.LoginActivity"
+            android:label="@string/login_label"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activty.home.HtmlActivity"
+            android:label="@string/html_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.SetInterestActivity"
+            android:label="@string/set_Internet_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.HotSearchActivity"
+            android:label="@string/hot_search_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.TeacherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/teacher_detail_label"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activty.home.SearchReultActivity"
+            android:label="@string/search_result_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.MyFocusActivity"
+            android:label="@string/my_focus_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.MyBabyActivity"
+            android:label="@string/my_baby_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.AddBabyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/add_baby_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activty.mine.MessageListActivity"
+            android:label="@string/message_list_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.UserInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/set_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.EditNameActivity"
+            android:label="@string/edit_name_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.FamilyIdentityActivity"
+            android:label="@string/family_identity_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.UTicketActivity"
+            android:label="@string/uticket_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.UTicketRecordActivity"
+            android:label="@string/uticket_record_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.SignUpActivity"
+            android:label="@string/sign_up_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.ConfirmActivity"
+            android:label="@string/confirm_sign_up_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.SignUpSucessActivity"
+            android:label="@string/sign_up_sucess_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.PicturesActivity"
+            android:label="@string/pics_scan_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.LessonsCodeActivity"
+            android:label="@string/rq_code_lessons_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.CourseReviewsActivity"
+            android:label="@string/lessons_reviews_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.CourseReviewsNextActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/lessons_reviews_next_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activty.mine.LessonsOrderDetailActivity"
+            android:label="@string/lessons_order_detail_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.BoundPhoneActivity"
+            android:label="@string/bound_phone_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.TeacherPicturesActivity"
+            android:label="@string/teacher_pics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.SelectPayTypeActivity"
+            android:label="@string/pay_type_title"
+            android:screenOrientation="portrait" />
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58c78f0a5312dd70f900051e" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="official" />
+        <!-- 微信登录回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信支付回调 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <!-- 支付宝使用 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="true"
+            android:screenOrientation="behind" />
+        <activity
+            android:name=".activty.home.PictureScanActivity"
+            android:label="@string/pics_scan_new_label"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.MessageActivity"
+            android:label="@string/String_teacher_message"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.dynamic.DynamicDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/dynamic_detail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activty.dynamic.DynamicCommentActivity"
+            android:label="@string/comment_dynamic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.VipActivity"
+            android:label="@string/vip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.BecomeVIPActivity"
+            android:label="@string/string_buy_vip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.ChooseCityActivity"
+            android:label="@string/string_city_select"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activty.mine.SystemSettingActivity"
+            android:label="@string/String_system_setting"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.NewMessageActivity"
+            android:label="@string/message_list_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.LeaveMessageActivity"
+            android:label="@string/leave_message_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activty.mine.UntiketRecordDetailActivity"
+            android:label="@string/untiket_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.MyOrderListActivity"
+            android:label="@string/course_order_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.adver.AdDetailActivity"
+            android:label="@string/ad_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.adver.ComboBuyActivity"
+            android:label="@string/buy_combo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.LocatePosActivity"
+            android:label="@string/map_loacate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.adver.ComboSignUpSucessActivity"
+            android:label="@string/combo_sign_up_ok"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.adver.ComoOrderDetailActivity"
+            android:label="@string/combo_order_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.mine.UntiketBuySucessActivity"
+            android:label="@string/untiket_buy_sucess"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.chat.PrivateLetterActivity"
+            android:label="@string/chat_presonal"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.ChatService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activty.doorteaching.AddDoorInAdressActivity"
+            android:label="@string/new_add_address"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.doorteaching.DoorInAdressListActivity"
+            android:label="@string/address_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.doorteaching.ClassSignUpActivity"
+            android:label="@string/calss_signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.chat.PrivateLetterWebViewActivity"
+            android:label="@string/chat_presonal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.NewCourseListActivity"
+            android:label="@string/new_home_course_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activty.home.NewSearchReultActivity"
+            android:label="@string/new_home_course_list"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

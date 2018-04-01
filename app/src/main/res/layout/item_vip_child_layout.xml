@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dp_10"
+    android:background="@color/white"
+    android:layout_height="80dp">
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="80dp">
+        <ImageView
+            android:id="@+id/child_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/noavatar"/>
+        <ImageView
+            android:id="@+id/child_vip_avtar"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_gravity="top|center_horizontal"
+            android:src="@drawable/child_vipcrown"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_10"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/child_name_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="宝贝"
+            android:singleLine="true"
+            android:maxLength="6"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/child_viptime"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="尚未加入"
+            android:gravity="center"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_now_bVip"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_now_bvip_corse_8"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center"
+        android:text="立刻加入"
+        android:layout_gravity="center_vertical"
+        android:textSize="12sp"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_untiket_buy_sucess"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bolooo.studyhomeparents.activty.mine.UntiketBuySucessActivity">
+    <include layout="@layout/bar_layout"/>
+    <ImageView
+        android:src="@drawable/buy_ticket_done"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/untiket_buy_sucess"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_color_99"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/dp_20" />
+    <TextView
+        android:id="@+id/tv_mine_untiket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/text_color_99"
+        android:layout_margin="@dimen/dp_10"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="@string/text_wc"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/sign_up_btn_shape"
+        android:textSize="16sp" />
+
+</LinearLayout>

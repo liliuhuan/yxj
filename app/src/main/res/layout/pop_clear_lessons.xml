@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_clear_reset"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/clear_order"
+    android:gravity="center"
+    android:paddingLeft="@dimen/dp_16"
+    android:paddingRight="@dimen/dp_16"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/login__weixin_shape"
+    android:textSize="@dimen/sp_16">
+
+</TextView>

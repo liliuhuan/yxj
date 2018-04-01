@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_buy_info">
+        <com.bolooo.studyhomeparents.views.MyWebView
+            android:id="@+id/webView"
+            android:scrollbars="none"
+            android:layout_below="@+id/title_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.bolooo.studyhomeparents.views.MyWebView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/transparency"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="2dp">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="游学家"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/bar_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/bar_right_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/dp_10"
+                android:src="@drawable/ticon_more"
+                />
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ticon_back"
+                />
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_buy_info"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/share_image"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_8"
+            android:src="@drawable/ticon_text_shareclass"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/combo_buy_tv"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/shape_combo_buy_jianbian"
+            android:text="30游票 购买套餐"
+            android:gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>

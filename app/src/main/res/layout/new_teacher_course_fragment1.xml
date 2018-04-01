@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/message_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/empty_ly"
+            android:visibility="gone">
+            <include layout="@layout/lay_emptyview"></include>
+        </android.support.v4.widget.NestedScrollView>
+        <com.bolooo.studyhomeparents.views.recyclerview.LuRecyclerView
+            android:id="@+id/rlv_view"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_height="match_parent">
+        </com.bolooo.studyhomeparents.views.recyclerview.LuRecyclerView>
+</RelativeLayout>

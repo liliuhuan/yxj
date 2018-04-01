@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="@dimen/dp_16">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/dp_8">
+
+                <ImageView
+                    android:id="@+id/image_teacher"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/noavatar" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/image_teacher"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_teacher_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/sp_18"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_teacher_course"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_teacher_name"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_teacher_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_8"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_toRightOf="@+id/tv_teacher_name"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_4"
+                        android:paddingRight="@dimen/dp_4"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_12" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:src="@drawable/new_inline_locat" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_locate_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:text=""
+                            android:textColor="@color/text_color_4a"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/tv_locate_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_2"
+                            android:text=""
+                            android:textColor="@color/text_color_4a"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="160dp">
+
+            <ImageView
+                android:id="@+id/image_course"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_grayee_bg" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/cover_mask" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/dp_20">
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_40"
+                    android:background="@drawable/new_rectangle_solid_bgcolor_orange_corner3_transparency"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_2"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_2"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_sign_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_toRightOf="@+id/tv_year"
+                    android:background="@drawable/rect_new_withe_solid_bg_color_corner3"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp_2"
+                    android:paddingLeft="@dimen/dp_8"
+                    android:paddingRight="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_2"
+                    android:text=""
+                    android:textColor="@color/bg_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tv_course_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_year"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_18" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teacher_img"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_40"
+                android:layout_marginTop="8dp">
+
+                <RatingBar
+                    android:id="@+id/item_course_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/transparency"
+                    android:isIndicator="true"
+                    android:maxHeight="16dp"
+                    android:minHeight="16dp"
+                    android:numStars="5"
+                    android:progressDrawable="@drawable/ratingbar_home_small" />
+
+                <TextView
+                    android:id="@+id/tv_sign_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/item_course_score"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_4"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/list_bg"
+        android:layout_height="@dimen/dp_8"/>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:padding="8dp"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/text_color_77"
+        android:text="当前定位城市"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+        <TextView
+            android:id="@+id/locate_city"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:minWidth="@dimen/dp_100"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/bg_color"
+            android:background="@drawable/preferential_shape"
+            android:text=""/>
+        <TextView
+                android:id="@+id/tv_located_city"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:text="刷新定位"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:drawablePadding="8dp"
+                android:layout_marginRight="@dimen/dp_20"
+                android:drawableRight="@drawable/bicon_refresh"
+                android:textColor="@color/cp_gray_deep"/>
+    </RelativeLayout>
+</LinearLayout>

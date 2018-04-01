@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/checked_orange_bg"
+    android:button="@null"
+    android:checked="false"
+    android:gravity="center"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:textSize="14sp"
+    android:textColor="@color/checked_orange_textcolor"
+    android:id="@+id/comment_tag_cb">
+
+</CheckBox>

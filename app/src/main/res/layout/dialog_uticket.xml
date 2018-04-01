@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/transparency"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image_uticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+    <ImageView
+        android:id="@+id/goto_unticket_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/about_uticket02store"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/image_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/about_uticket03back"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        />
+</LinearLayout>

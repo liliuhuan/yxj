@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg">
+  <include layout="@layout/bar_layout"
+      android:id="@+id/title_lay"/>
+  <LinearLayout
+      android:id="@+id/name_lay"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="45dp"
+      android:orientation="horizontal"
+      android:gravity="center_vertical"
+      android:background="@drawable/two_border_bg"
+      android:layout_below="@+id/title_lay"
+      android:layout_marginTop="16dp"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="5"
+        android:text="@string/user_name_txt"
+        android:textColor="@color/text_color_33"
+        android:textSize="14sp" />
+    <EditText
+        android:id="@+id/nickname_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_hint_txt"
+        android:background="@null"
+        android:textColorHint="@color/text_color_99"
+        android:textColor="@color/text_color_33"
+        android:textSize="14sp" />
+
+  </LinearLayout>
+  <Button
+      android:id="@+id/login_btn"
+      android:layout_width="fill_parent"
+      android:layout_height="45dp"
+      android:layout_marginLeft="20dip"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="20dp"
+      android:layout_below="@+id/name_lay"
+      android:background="@drawable/rectangle_round_corner6_orange"
+      android:gravity="center"
+      android:text="@string/baby_save_txt"
+      android:textColor="#ffffff"
+      android:textSize="@dimen/btn_text_size"
+      />
+
+</RelativeLayout>

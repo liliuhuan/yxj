@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipe_refresh"
+        android:layout_height="match_parent">
+      <com.bolooo.studyhomeparents.views.SingleLayoutListView
+          android:id="@+id/curriculum_list_lv"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_below="@+id/title_lay"
+          android:divider="@null"
+          android:fadingEdge="none"
+          android:padding="@dimen/point"
+          android:clipToPadding="false"
+          android:footerDividersEnabled="false"
+          android:listSelector="@color/white"
+          >
+      </com.bolooo.studyhomeparents.views.SingleLayoutListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/lay_emptyview"
+        android:id="@+id/empty_ly"
+        android:visibility="gone"/>
+    <include layout="@layout/wait_progressbar"/>
+
+
+</FrameLayout>

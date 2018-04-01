@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_bg"
+    tools:context="com.bolooo.studyhomeparents.activty.home.NewCourseListActivity">
+
+    <include layout="@layout/bar_layout" />
+
+    <include layout="@layout/pin_header" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_8">
+        <com.example.xrecyclerview.XRecyclerView
+            android:id="@+id/xrlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/empty_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/empty_img"
+            android:visibility="gone" />
+        <include layout="@layout/wait_progressbar" />
+    </FrameLayout>
+</LinearLayout>

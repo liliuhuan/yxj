@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_ly"
+        android:visibility="gone">
+        <include layout="@layout/lay_emptyview"></include>
+    </android.support.v4.widget.NestedScrollView>
+    <com.bolooo.studyhomeparents.views.recyclerview.LuRecyclerView
+        android:id="@+id/dynamic_rl"
+        android:layout_width="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_height="match_parent"></com.bolooo.studyhomeparents.views.recyclerview.LuRecyclerView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_teacher_pictures"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bolooo.studyhomeparents.activty.TeacherPicturesActivity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:paddingBottom="@dimen/dp_10"
+       android:orientation="vertical">
+       <include layout="@layout/bar_layout"
+           android:id="@+id/title_bar"></include>
+       <TextView
+           android:id="@+id/teacher_name"
+           android:padding="@dimen/dp_10"
+           android:textSize="14sp"
+           tools:text="王老师的作品相册"
+           android:gravity="center"
+           android:background="@color/white"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+       <ListView
+           android:id="@+id/lv_pictures"
+           android:scrollbars="none"
+           android:background="@color/white"
+
+           android:listSelector="#00000000"
+           android:dividerHeight="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"></ListView>
+   </LinearLayout>
+    <include layout="@layout/wait_progressbar"/>
+</FrameLayout>

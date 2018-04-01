@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6dp"
+    android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/list_bg"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/good_alesson"
+            android:layout_height="200dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/noimage"
+                android:id="@+id/lesson_image" />
+            <TextView
+                android:id="@+id/lesson_tag"
+                android:background="@drawable/new_recomment_icon"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:text="热门课程"
+                android:paddingBottom="5dp"
+                android:paddingTop="2dp"
+                android:paddingLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+    <include layout="@layout/full_cut_off"></include>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/course"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-4dp"
+            android:text="《儿童钢琴初级班》"
+            android:textSize="16sp"
+            android:textColor="@color/couse_name_color"
+            />
+        <ImageView
+            android:id="@+id/image_uticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course"
+            android:layout_marginTop="-5dp"
+            android:src="@drawable/uticket"/>
+        <RelativeLayout
+            android:id="@+id/rl_untick"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/image_uticket"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/course"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 "
+                android:textColor="@color/red_dark"
+                android:textSize="11sp"
+                />
+            <TextView
+                android:id="@+id/lesson_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/price"
+                android:text=" 游票/课时"
+                android:textColor="@color/couse_name_color"
+                android:textSize="11sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:id="@+id/teacher_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/noavatar" />
+            <LinearLayout
+                android:id="@+id/teacher"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@id/teacher_img"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/teacher_skill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:singleLine="true"
+                    android:textColor="@color/couse_name_color"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:textColor="@color/couse_name_color"
+                    android:text="刘星宇"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_below="@+id/teacher_img"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content">
+                <RatingBar
+                    android:id="@+id/item_course_score"
+                    android:numStars="5"
+                    android:layout_marginTop="2dp"
+                    android:maxHeight="16dp"
+                    android:minHeight="16dp"
+                    android:isIndicator="true"
+                    android:progressDrawable="@drawable/ratingbar_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     />
+                <TextView
+                    android:id="@+id/item_course_assisnum"
+                    android:text="5.0分 10条评论"
+                    android:textColor="@color/couse_name_color"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/item_course_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/studying"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+            android:textSize="10sp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/bg_color"
+            android:background="@drawable/tv_tab_bg_shape"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/child_year"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textSize="10sp"
+            android:paddingBottom="3dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/studying"
+            android:layout_marginLeft="8dp"
+            android:visibility="visible"
+            android:textColor="@color/bg_color"
+            android:background="@drawable/tv_tab_bg_shape"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+            android:textSize="10sp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/child_year"
+            android:textColor="@color/bg_color"
+            android:background="@drawable/tv_tab_bg_shape"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUp" />
+        <RelativeLayout
+            android:layout_toLeftOf="@+id/teacher_distance"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/new_inline_locat"/>
+            <TextView
+                android:id="@+id/teacher_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/locate"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textSize="11sp"
+                android:textColor="@color/locate_color"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/teacher_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/locate_color"
+            android:textSize="11sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+</LinearLayout>

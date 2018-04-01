@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="@dimen/dp_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/civ_user_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="#CDCDCD" />
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/parent_name"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="3dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/assis_time"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/assis_course"
+            android:text=""
+            android:layout_below="@+id/parent_name"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:id="@+id/rl_score"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/assis_course"
+            android:layout_height="wrap_content">
+            <RatingBar
+                android:id="@+id/assis_star"
+                style="@style/roomRatingBar_small"
+                android:layout_width="wrap_content"
+                android:numStars="5"
+                android:isIndicator="true"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/assis_score"
+                android:text=""
+                android:textColor="@color/yellow"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/assis_star"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <com.bolooo.studyhomeparents.views.MyGridView
+            android:id="@+id/grid_tags"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:numColumns="3"
+            android:horizontalSpacing="16dp"
+            android:layout_below="@+id/rl_score">
+        </com.bolooo.studyhomeparents.views.MyGridView>
+        <TextView
+            android:id="@+id/assis_content"
+            android:text=" "
+            android:layout_below="@+id/grid_tags"
+            android:layout_marginTop="10dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.bolooo.studyhomeparents.views.MyGridView
+            android:id="@+id/grid_image"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:visibility="visible"
+            android:layout_below="@+id/assis_content"
+            ></com.bolooo.studyhomeparents.views.MyGridView>
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/grid_image"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray"/>
+        <RelativeLayout
+            android:id="@+id/assis_reply"
+            android:layout_below="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_time_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/tv_content_1"
+                android:text="老师回复"
+                android:background="@drawable/tv_withe_shape"
+                android:textColor="@color/white"
+                android:padding="3dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_time_2"
+                android:layout_below="@+id/tv_content_1"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_title" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

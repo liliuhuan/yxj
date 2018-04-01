@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+  <ImageView
+      android:id="@+id/pay_type_icon_iv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/point"
+      android:src="@drawable/noimage"
+      android:layout_centerVertical="true"
+      android:scaleType="centerCrop"/>
+  <ImageView
+      android:id="@+id/pay_type_next_iv"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="@dimen/dp_16"
+      android:layout_centerVertical="true"
+      android:src="@drawable/new_goin"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/pay_type_icon_iv"
+      android:layout_toLeftOf="@+id/pay_type_next_iv"
+      android:layout_centerVertical="true"
+      android:orientation="vertical">
+    <TextView
+        android:id="@+id/pay_type_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/text_color_33"/>
+    <TextView
+        android:id="@+id/pay_type_into_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_99"/>
+  </LinearLayout>
+
+</RelativeLayout>

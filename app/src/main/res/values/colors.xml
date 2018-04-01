@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_blue">#1EADEC</color>
+    <color name="blue_dark">#006388</color>
+    <color name="theme_red">#FF0000</color>
+    <color name="red_dark">#B90000</color>
+    <color name="red_message">#E33B3B</color>
+    <color name="yellow">#FF8100</color>
+    <color name="bg_color">#FAB005</color>
+    <color name="list_bg">#F8F9FA</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparency">#00000000</color>
+    <color name="gray">#AAAAAAAA</color>
+    <color name="vip_color">#EE635F</color>
+    <color name="grays">#AAAAAA</color>
+    <color name="gray_ee">#eeeeee</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="line">#10000000</color>
+    <color name="black">#000000</color>
+    <color name="text_title">#555555</color>
+    <color name="btn_color">#FA910E</color>
+    <color name="login_color">#FAC34E</color>
+    <color name="text_gray">#CDCDCD</color>
+    <color name="text_color_66">#666666</color>
+    <color name="text_color_55">#555555</color>
+    <color name="text_color_77">#777777</color>
+    <color name="text_color_33">#333333</color>
+    <color name="text_color_99">#999999</color>
+    <color name="text_color_4a">#4A4A4A</color>
+    <color name="setting_expectations">#EF5F5F</color>
+    <color name="setting_reply">#ee5f5f</color>
+    <color name="tab_bg">#a06A6563</color>
+    <color name="bg_ff">#FFF8F9FA</color>
+    <color name="login_white">#a0FFFFFF</color>
+    <color name="un_select">#A7A7A7</color>
+    <color name="cut_off_color">#EEEEEE</color>
+    <color name="bar_bg">#FC955C</color>
+    <color name="home_text">#FEA16E</color>
+    <color name="text_name">#5D5D5D</color>
+    <color name="navpage">#FFE1E8EB</color>
+    <!-- 自定义下拉刷新自动加载ListView使用 -->
+    <color name="pull_refresh_textview">#979797</color>
+    <color name="gold">#979797</color>
+    <color name="couse_name_color">#777777</color>
+    <color name="locate_color">#999999</color>
+    <color name="orange">#F35938 </color>
+
+    <color name="text_color_gey">#676767</color>
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="bg">#F5F5F5</color>
+    <color name="blue">#00a5ec</color>
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+
+    <color name="cp_divider">#E5E5E5</color>
+    <color name="cp_shadow">#AAEBEBEB</color>
+    <color name="cp_common_bg">#FAFAFA</color>
+    <color name="cp_content_bg">#8c8c8c</color>
+    <color name="cp_gray">#8c8c8c</color>
+    <color name="cp_gray_deep">#5c5c5c</color>
+    <color name="cp_alpha_gray">#CC646464</color>
+    <color name="cp_theme_gray">#646464</color>
+    <color name="home_search_bg">#33000000</color>
+    <color name="tag_bg1">#F35938</color>
+    <color name="tag_bg2">#1EADEB</color>
+    <color name="tag_bg3">#AAAAAA</color>
+
+
+    <!--LuYang-->
+    <color name="group_item_bg">#F3F3F3</color>
+    <color name="group_item_pressed_bg">#E5E5E5</color>
+    <color name="child_item_bg">#E5E5E5</color>
+    <color name="child_item_diveder">#D6D6D5</color>
+    <color name="list_item_text_pressed_bg">#FF822E</color>
+    <color name="tab_text_color">#787878</color>
+    <color name="tab_text_pressed_color">#CD0000</color>
+    <color name="main_color">#0087e0</color>
+    <color name="text_black1">#2f2f2f</color>
+
+    <color name="phone_code">#aaaaaa</color>
+    <!--LuYang-->
+
+    <color name="card_bg">#EBEBEB</color>
+</resources>

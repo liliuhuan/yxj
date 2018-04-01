@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bolooo.studyhomeparents.views.MySwipeRefreshlayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipe_refresh" >
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/bg_color"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.youth.banner.Banner
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        app:indicator_height="8dp"
+                        app:indicator_margin="4dp"
+                        app:indicator_width="8dp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/artboard_2" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginTop="260dp"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_classify"
+                        android:clipToPadding="false"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+                </FrameLayout>
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingTop="16dp"
+                    android:layout_marginBottom="10dp"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetStart="0dp"
+                    app:layout_collapseMode="pin">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/home_title_bar" />
+                    </FrameLayout>
+                </android.support.v7.widget.Toolbar>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <include layout="@layout/new_content_scolling"/>
+        <include layout="@layout/wait_progressbar" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</com.bolooo.studyhomeparents.views.MySwipeRefreshlayout>

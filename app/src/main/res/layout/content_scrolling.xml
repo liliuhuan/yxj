@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:id="@+id/frameLayout_rl"
+    tools:showIn="@layout/home_fragment_layout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include layout="@layout/wait_progressbar" />
+        <com.example.xrecyclerview.XRecyclerView
+            android:id="@+id/xrlistview"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:background="@color/list_bg"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/empty_img_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/illus_emptycity"/>
+        <ImageView
+            android:id="@+id/empty_img_area"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/empty_img"/>
+</FrameLayout>
+
+
+

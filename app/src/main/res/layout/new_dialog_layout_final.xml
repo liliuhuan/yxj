@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/transparency"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/sign_up_shape"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            android:text=""
+            android:textSize="16sp"
+            android:visibility="visible"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_height="1px" />
+        <LinearLayout
+            android:id="@+id/ll_action"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="否"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="1px"
+                android:background="@color/gray"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="@string/check_order"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:id="@+id/go_buy_untickte"
+                android:textColor="@color/theme_blue"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

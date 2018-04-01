@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_search_reult"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/bar_layout"
+        android:id="@+id/title_lay"></include>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_rl">
+        <com.example.xrecyclerview.XRecyclerView
+            android:id="@+id/teacher_list_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/title_lay"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:visibility="visible"
+            android:footerDividersEnabled="false"
+            android:listSelector="@color/white">
+        </com.example.xrecyclerview.XRecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <RelativeLayout
+        android:id="@+id/search_rl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_lay">
+        <TextView
+            android:text="@string/search_content"
+            android:textSize="14sp"
+            android:id="@+id/content"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/search_keyword"
+            android:text=""
+            android:textColor="@color/bg_color"
+            android:textSize="14sp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/content"
+            android:background="@drawable/tv_tab_bg_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/empty_img_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@drawable/empty_img"/>
+    <include layout="@layout/wait_progressbar"/>
+</RelativeLayout>

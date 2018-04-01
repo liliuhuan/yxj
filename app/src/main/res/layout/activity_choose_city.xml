@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_color">
+            <ImageView
+                android:id="@+id/go_back_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:textSize="12sp"
+                android:src="@drawable/ticon_back"
+                />
+            <EditText
+                android:id="@+id/et_city_keyword"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_cancel"
+                android:background="@drawable/tv_tab_bg_shape"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:gravity="center"
+                android:imeOptions="actionSearch"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:hint="输入城市名、拼音检索"
+                />
+            <TextView
+                android:text="@string/search"
+                android:textColor="@color/grays"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_shape"
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:layout_height="25dp" />
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+                <TextView
+                    android:id="@+id/scoll_letter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_66"
+                    android:textSize="@dimen/sp_18"
+                    android:padding="8dp"
+                    android:layout_marginRight="36dp"
+                    android:layout_marginLeft="36dp"
+                    android:background="@color/white"
+                    android:text="A"/>
+                <ListView
+                    android:id="@+id/listview_all_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/scoll_letter"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"/>
+
+                <TextView
+                    android:id="@+id/tv_letter_overlay"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/cp_overlay_bg"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"/>
+
+                <com.bolooo.studyhomeparents.views.SideLetterBar
+                    android:id="@+id/side_letter_bar"
+                    android:layout_width="@dimen/side_letter_bar_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/dp_10"
+                    tools:ignore="RtlHardcoded" />
+
+                <ListView
+                    android:id="@+id/listview_search_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:listSelector="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_inputcity"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <include layout="@layout/no_net_textview"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                />
+        </FrameLayout>
+    </LinearLayout>
+  <include layout="@layout/wait_progressbar"/>
+</FrameLayout>

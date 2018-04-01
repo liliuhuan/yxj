@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+  >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grays"
+        android:paddingBottom="10dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_user_img"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="#CDCDCD" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/civ_user_img"
+        android:textColor="@color/text_title" />
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_content_1"
+        android:layout_toRightOf="@+id/civ_user_img"
+        android:background="@color/grays"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tv_time_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_content_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/civ_user_img"
+        android:textColor="@color/text_title" />
+
+    <TextView
+        android:id="@+id/tv_time_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tv_content_1"
+        android:layout_toRightOf="@+id/civ_user_img"
+        android:text="老师回复"
+        android:visibility="gone"
+        android:background="@drawable/guestbook_shape"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_time_2"
+        android:layout_below="@+id/tv_content_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:padding="3dp"
+        android:layout_centerVertical="true"
+        android:textSize="14sp"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="@color/text_title" />
+</RelativeLayout>

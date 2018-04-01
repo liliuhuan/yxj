@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <include layout="@layout/bar_layout"
+      android:id="@+id/title_lay"/>
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/swipe_refresh"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/title_lay">
+    <com.bolooo.studyhomeparents.views.SingleLayoutListView
+        android:id="@+id/message_list_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_lay"
+        android:divider="@color/gray_ee"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:listSelector="@color/white"
+        >
+    </com.bolooo.studyhomeparents.views.SingleLayoutListView>
+  </android.support.v4.widget.SwipeRefreshLayout>
+  <include layout="@layout/lay_emptyview"
+      android:id="@+id/empty_ly"
+      android:visibility="gone"/>
+  <include layout="@layout/wait_progressbar"/>
+</RelativeLayout>

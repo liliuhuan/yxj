@@ -1,0 +1,129 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#FAB005</item>
+        <item name="colorAccent">#FAB005</item>
+        <item name="actionBarItemBackground">@color/transparency</item>
+    </style>
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">#ffffff</item> <!--  菜单字体颜色-->
+        <item name="android:textSize">18sp</item> <!-- 菜单字体大小-->
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="mine_function_style">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textColor">@color/text_color_33</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">24dip</item>
+        <item name="android:maxHeight">24dip</item>
+    </style>
+    <style name="roomRatingBar_meniu" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_meniu</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+    <style name="roomRatingBar_meniu_gray" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_meniu_gray</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+    <style name="roomRatingBar_small" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_small</item>
+        <item name="android:minHeight">12dip</item>
+        <item name="android:maxHeight">12dip</item>
+    </style>
+    <!--加载更多的RecycleerView使用-->
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">LineSpinFadeLoaderIndicator</item>
+    </style>
+    <!--分割线使用-->
+    <style name="cut_off">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/gray_ee</item>
+        <item name="android:layout_marginLeft">@dimen/sp_16</item>
+        <item name="android:layout_marginRight">@dimen/sp_16</item>
+
+    </style>
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否有标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <!-- Navigation Header(微信支付结果页) -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+
+    <style name="SelectVariableValue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="NomalVariableValue">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <declare-styleable name="DropDownMenu">
+        <attr name="ddunderlineColor" format="color"/>
+        <attr name="dddividerColor" format="color"/>
+        <attr name="ddtextSelectedColor" format="color"/>
+        <attr name="ddtextUnselectedColor" format="color"/>
+        <attr name="ddmenuBackgroundColor" format="color"/>
+        <attr name="ddmaskColor" format="color"/>
+        <attr name="ddmenuTextSize" format="dimension"/>
+        <attr name="ddmenuSelectedIcon" format="reference"/>
+        <attr name="ddmenuUnselectedIcon" format="reference"/>
+        <attr name="ddmenuMenuHeightPercent" format="float"/>
+    </declare-styleable>
+
+    <style name="LetterIndexTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">@dimen/side_letter_bar_width</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/cp_gray</item>
+    </style>
+    <style name="OldDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

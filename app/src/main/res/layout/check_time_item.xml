@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/course_num"
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="第一节课"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_weight="3"
+            android:layout_toRightOf="@+id/course_num"
+            android:layout_width="0dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="12月23日 周六 下午 3:00"/>
+</LinearLayout>

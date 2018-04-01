@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    <ImageView
+        android:id="@+id/vip_image_icon"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_vip"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical" />
+    <TextView
+        android:id="@+id/vip_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/vip_image_icon"
+        android:padding="3dp"
+        android:paddingLeft="@dimen/dp_10"
+        android:textColor="@color/text_color_55"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="bottom"
+        android:text="您是游学家VIP\nkkkkk"/>
+</RelativeLayout>

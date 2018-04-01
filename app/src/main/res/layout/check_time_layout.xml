@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/login__weixin_shape"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="时间安排"/>
+        <ListView
+            android:id="@+id/time_list"
+            android:layout_weight="1"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/ensure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="确认"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/blue_dark"
+        />
+</LinearLayout>

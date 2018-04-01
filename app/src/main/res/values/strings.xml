@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name">游学家</string>
+    <!--页面标题-->
+    <string name="mine_title">我的课程</string>
+    <string name="my_focus_title">我的关注</string>
+    <string name="my_baby_title">我的宝贝</string>
+    <string name="add_baby_title">添加宝贝</string>
+    <string name="edit_baby_title">编辑宝贝</string>
+    <string name="message_list_title">消息通知</string>
+    <string name="set_title">设置</string>
+    <string name="set_interest">学习意向</string>
+    <string name="edit_name_title">姓名/昵称</string>
+    <string name="family_identity_title">家庭身份选择</string>
+    <string name="uticket_title">游票</string>
+    <string name="uticket_record_title">游票购买记录</string>
+    <string name="rq_code_lessons_title">扫码上课</string>
+    <string name="lessons_reviews_title">点评</string>
+    <string name="lessons_reviews_next_title">点评课程</string>
+    <string name="lessons_order_detail_title">订单详情</string>
+    <string name="bound_phone_title">验证手机号</string>
+    <string name="pay_type_title">收银台</string>
+    <!--首页我的使用-->
+    <string name="mine_point_title">积分</string>
+    <string name="mine_point_unit">分</string>
+    <string name="mine_focus">关注</string>
+    <string name="mine_dotey">宝贝</string>
+    <string name="mine_notification">通知</string>
+    <string name="mine_setting">设置</string>
+    <string name="lessions_status_title">课程状态</string>
+    <string name="mine_no_login">未登录</string>
+    <!--我的宝贝页面-->
+    <string name="tag_default_value">0</string>
+    <!--添加我的宝贝页面-->
+    <string name="header_icon_txt">头像</string>
+    <string name="header_upload_txt">上传</string>
+    <string name="baby_name_txt">姓名</string>
+    <string name="baby_nickname_txt">小名</string>
+    <string name="baby_sex_txt">性别</string>
+    <string name="baby_birthday_txt">生日</string>
+    <string name="baby_remark_txt">备注</string>
+    <string name="baby_tips_txt">请填写真实的信息\n孩子的信息是老师审核报名的依据</string>
+    <string name="edit_hint_txt">填写</string>
+    <string name="select_hint_txt">选择</string>
+    <string name="baby_save_txt">保存</string>
+    <string name="choose_gender_txt">选择性别</string>
+    <string name="woman_txt">女</string>
+    <string name="man_txt">男</string>
+    <string name="pick_from_gallery">从相册选择</string>
+    <string name="pick_from_cupture">拍照</string>
+    <!--用户信息设置-->
+    <string name="user_name_txt">姓名/昵称</string>
+    <string name="family_identity_txt">家庭身份</string>
+    <string name="user_mobile_txt">手机号</string>
+    <string name="user_nickname_txt">姓名/昵称</string>
+    <string name="weichat_txt">微信绑定</string>
+    <string name="learning_intent_txt">学习意向</string>
+    <string name="exit_login">退出当前账号</string>
+    <string name="input_hint_txt">请输入</string>
+    <!--游票购买-->
+    <string name="uticket_num_txt">当前持有游票：</string>
+    <string name="point_txt">积分：</string>
+    <string name="uticket_history_txt">购买记录</string>
+    <string name="point_exchange_txt">积分兑换</string>
+    <string name="uticket_recommend_txt">推荐</string>
+    <string name="point_exchange_title_txt">积分兑换</string>
+    <string name="point_exchange_cancle_txt">取消</string>
+    <string name="point_exchange_go_txt">兑换</string>
+    <string name="point_exchange_affirm_txt">确定</string>
+    <string name="uticket_pay_money_title_txt">支付金额</string>
+    <string name="uticket_pay_type_title_txt">请选择支付方式</string>
+    <!--扫码上课-->
+    <string name="scan_qr_code_title_txt">请老师扫码</string>
+    <!--点评-->
+    <string name="profession_degree_title_txt">专业度</string>
+    <string name="appetency_title_txt">亲和力</string>
+    <string name="interactivity_title_txt">互动性</string>
+    <string name="label_title_txt">标签</string>
+    <string name="next_txt">下一步</string>
+    <string name="reviews_input_hint_txt">有什么想对老师说的，写在这里吧！</string>
+    <string name="share_photo_title_txt">分享照片</string>
+    <string name="finish_txt">完成点评</string>
+    <!--购课详情-->
+    <string name="lessons_status_txt">预约状态: </string>
+    <string name="lessons_phone_tips_txt">如有疑问，请联系客服</string>
+    <string name="lessons_phone_bt_txt">联系客服</string>
+    <string name="lessons_phone_bt">联系老师</string>
+    <!-- ListView下拉刷新跟自动加载所用字段 -->
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="latest_curriculum">最新课程：</string>
+    <!--footer-->
+    <string name="list_footer_loading">正在加载中…</string>
+    <string name="list_footer_network_error">点击重新加载</string>
+    <string name="list_footer_end">已全部加载完</string>
+    <!--微信登录回调-->
+    <string name="errcode_cancel">分享发送取消</string>
+    <string name="login_cancel">""</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="no_interest_tips">请先选择学习意向</string>
+    <string name="share_ok">分享成功</string>
+    <!--绑定手机号-->
+    <string name="bound_phone_describe_txt">您是首次登录，请先验证手机号码</string>
+    <string name="input_code_title_txt">验证码</string>
+    <string name="get_code_txt">获取验证码</string>
+    <string name="submit_txt">验证</string>
+    <!--首页-->
+
+    <string name="city_name">北京</string>
+    <string name="main_title">游学家</string>
+    <string name="popular_lecturer">热门讲师</string>
+    <string name="good_lesson">全部</string>
+    <string name="welcome1">欢迎来到身边的游学家</string>
+    <string name="welcome2">您身边有</string>
+    <string name="welcome3">个课程即将开课</string>
+    <string name="please_login">请登录</string>
+    <string name="general_categories">全部类别</string>
+    <string name="no_assis">暂无评分</string>
+
+    <!--热门搜索-->
+    <string name="cancel">取消</string>
+    <string name="search_hint">请输入您要查找的课程、讲师</string>
+    <string name="search">搜索</string>
+    <string name="search_toast">请输入你要查找的关键字!</string>
+    <string name="search_result">搜索结果</string>
+    <string name="search_content">搜索内容:</string>
+
+
+    <!--登录页面-->
+    <string name="get_code">获取验证码</string>
+    <string name="try_again">重新获取</string>
+    <string name="phone_number">手机号</string>
+    <string name="verification_code">验证码</string>
+    <string name="login">登录</string>
+    <string name="tips">点击登录,则表示您已阅读并同意</string>
+    <string name="user_agreement">《游学家用户协议》</string>
+    <string name="login_weixin">使用微信登录</string>
+    <string name="teacher_pics">讲师相册</string>
+    <!-- 微信使用文字 -->
+    <string name="not_install_wechat">当前微信版本过低或未安装，安装微信后才能使用</string>
+    <string name="pay_result_fail">支付失败</string>
+    <string name="pay_result_success">支付成功</string>
+    <string name="pay_result_cancel">取消支付</string>
+    <!--检查更新-->
+    <string name="update_finish">下载完成</string>
+    <string name="update_fail">下载失败</string>
+    <!--配置文件类部分名字-->
+
+    <string name="welcome_label">欢迎页面</string>
+    <string name="login_label">登录页面</string>
+    <string name="html_label">Html网页封装类</string>
+    <string name="set_Internet_label">设置意图页</string>
+    <string name="hot_search_label">热门搜索页</string>
+    <string name="teacher_detail_label">讲师详情页</string>
+    <string name="search_result_label">搜索结果页</string>
+    <string name="pics_scan_label">图片放大页</string>
+    <string name="sign_up_label">报名页</string>
+    <string name="confirm_sign_up_label">确认报名页</string>
+    <string name="sign_up_sucess_label">报名成功页</string>
+    <string name="pics_scan_new_label">图片放大页</string>
+
+    <string name="preferential">多买多优惠,访问游票商城</string>
+    <string name="text_mail">立刻去游票商城，折扣买游票</string>
+    <string name="buy_sign_up">购买并报名</string>
+    <string name="check_order">查看订单</string>
+    <string name="hot_word">热门关键词</string>
+    <string name="message_word">有什么想要咨询老师的，请在这里留言</string>
+    <string name="message_commit">提交留言</string>
+
+    <string name="my_dynamic">我的动态</string>
+    <string name="et_my_dynamic_hint">分享您的动态，或课程通知</string>
+    <string name="add_dynamic_title">发动态</string>
+    <string name="dynamic_detail">动态详情</string>
+    <string name="publish">发布</string>
+    <string name="comment_dynamic">评论动态</string>
+    <string name="commit">提交</string>
+    <string name="vip">vip页面</string>
+
+    <!--定位-->
+    <string name="cp_select_city">选择城市</string>
+    <string name="cp_hot_city">热门城市</string>
+    <string name="cp_located_city">定位城市</string>
+    <string name="cp_hint_search_box">请输入城市名或拼音</string>
+    <string name="cp_nothing_found">没有搜索结果~</string>
+    <string name="cp_locating">正在定位…</string>
+    <string name="cp_located_failed">定位失败</string>
+    <string name="string_buy_vip">购买vip页面</string>
+    <string name="string_city_select">城市选择页面</string>
+    <string name="String_system_setting">系统设置</string>
+    <string name="String_teacher_message">老师留言</string>
+    <string name="string_empty">暂无数据</string>
+    <string name="string_message_from">来自：游学家</string>
+    <string name="leave_message_list">留言通知列表</string>
+    <string name="message_notice">消息通知</string>
+    <string name="submit">发送</string>
+    <string name="unticket_buy">游票充值</string>
+    <string name="untiket_number">- 6</string>
+    <string name="unticket">游票</string>
+    <string name="sign_up_course">报名课程</string>
+    <string name="untiket_recharge">游票充值</string>
+    <string name="untiket_tixian">教师提现游票</string>
+    <string name="sign_up_course_fail">报名失败退还</string>
+    <string name="system_add">系统添加</string>
+    <string name="credits_exchange">积分兑换</string>
+    <string name="teacher_get">教师收入游票</string>
+    <string name="unticket_num">游票数</string>
+    <string name="buy_type">交易类型</string>
+    <string name="buy_time">交易时间</string>
+    <string name="buy_project">交易项目</string>
+    <string name="buy_order_number">交易单号</string>
+    <string name="apply_money_number">支付金额</string>
+    <string name="user_score">使用积分</string>
+    <string name="untiket_canuse">游票余额</string>
+    <string name="untiket_detail">游票明细</string>
+    <string name="search_course">找课程</string>
+    <string name="order_des">您报名</string>
+    <string name="look_detail">查看订单</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_order_text">我的订单</string>
+    <string name="order_number">订单号：20171605</string>
+    <string name="order_status">状态:</string>
+    <string name="order_detail">详情</string>
+    <string name="see_time">查看时间</string>
+    <string name="clear_order">取消订单</string>
+    <string name="ad_detail">套餐详情</string>
+    <string name="course_order_list">课程报名</string>
+    <string name="contain_course">包含课程</string>
+    <string name="choose_child_text">请选择上课的孩子</string>
+    <string name="sign_up_sucess">成功</string>
+    <string name="sign_up_childs">参加学生:</string>
+    <string name="all_curse_num">总课时数：</string>
+    <string name="sign_up_number_text">报名人数：</string>
+    <string name="orgin_price_text">原价：</string>
+    <string name="discount_price_text">优惠价:</string>
+    <string name="palce_order_time_text">下单时间：</string>
+    <string name="pay_time_text">支付时间:</string>
+    <string name="comfrim_time_text">确认时间</string>
+    <string name="cancel_time_text">取消时间：</string>
+    <string name="buy_combo">购买套餐</string>
+    <string name="cancel_combo_order">取消套餐订单</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="pre_course">预热中</string>
+    <string name="sign_up_course_ing">报名中</string>
+    <string name="sign_up_course_full">已报满</string>
+    <string name="fav_text">收藏</string>
+    <string name="real_name">实名</string>
+    <string name="video_intro">视频介绍</string>
+    <string name="untiket_buy_sucess">充值成功！</string>
+    <string name="text_wc">完成</string>
+    <string name="chat_fragment">chat-fragment</string>
+    <string name="order_text">订单</string>
+    <string name="user_info_text">个人信息</string>
+    <string name="map_loacate">地图定位</string>
+    <string name="combo_sign_up_ok">套餐报名成功</string>
+    <string name="combo_order_detail">套餐订单详情</string>
+    <string name="chat_presonal">私信</string>
+    <string name="plase_edit">请输入</string>
+    <string name="new_add_address">新增上门授课地址</string>
+    <string name="door_in_address">上门授课地址</string>
+    <string name="buy_course">购课</string>
+    <string name="text_sign_up">报名</string>
+    <!--新版-->
+    <string name="recommend">精彩推荐</string>
+    <string name="around_selected">周边精选</string>
+    <string name="check_more">查看更多</string>
+    <string name="look_course">找课程</string>
+    <string name="address_list">地址列表</string>
+    <string name="calss_signup">班级报名</string>
+    <string name="new_home_course_list">首页找课程列表</string>
+    <string name="check_more_all">查看全部周边课程</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/network_hint"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_weight="1"
+    android:background="@color/tab_bg"
+    android:padding="8dp"
+    android:visibility="gone"
+    android:textColor="@color/white"
+    android:drawableLeft="@drawable/no_net"
+    android:gravity="center_vertical"
+    android:drawableRight="@drawable/new_goin"
+    android:text="网络不可用,点击查看网络设置"
+    android:textSize="12sp">
+</TextView>
